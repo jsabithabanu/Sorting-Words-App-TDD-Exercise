@@ -18,10 +18,7 @@ public class Tests
     public void Test1()
     {
         
-        List<char> wordsToSort = new List<char>();
-        wordsToSort.Add('w');
-        wordsToSort.Add('e');
-        wordsToSort.Add('u');
+        string[] wordsToSort = { "are", "you", "how" };
         _sortingWordApp.Sort("how are you").Should().BeEquivalentTo(wordsToSort);
     }
 }

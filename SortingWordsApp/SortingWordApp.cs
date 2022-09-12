@@ -8,16 +8,20 @@ namespace SortingWordsApp
 {
     public class SortingWordApp
     {
-        public List<char> Sort(string sentence)
+        public string[] Sort(string sentence)
         {
             string[] words = sentence.Split(null);
             List<char> endChars = new List<char>();
 
             foreach (string s in words)
             {
-                endChars.Add(s[s.Length - 1]);
+                //Reverse(s);
             }
-            return endChars;
+
+            //sort
+            //reverse
+
+            return words;
         }
     }
 }
